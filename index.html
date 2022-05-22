@@ -12,7 +12,9 @@
 <body>
 
   <main>
+    <!-- container app -->
     <section id="app">
+      <!-- header of section -->
       <div class="balance">
         <div class="colBalance">
           <p class="regular">My balance<p>
@@ -22,18 +24,20 @@
           <svg width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g></svg>
         </div>
       </div>
-
+      <!-- Canvas container -->
       <section id="charte">
         <h1>Spending - Last 7 days</h1>
-        <canvas id="myChart"></canvas>
+        <!-- canvas chart -->
+        <canvas id="amountChart"></canvas>
         <hr>
+        <!-- footer sections -->
         <footer>
-
+          <!-- totals -->
           <div class="totals">
             <p class="regular">Totals this month</p>
             <p class="totalOfmonth">$478.33</p>
           </div>
-
+          <!-- amount calcl -->
           <div class="calc">
             <p class="bold">+2.4%</p>
             <p class="last">from last month</p>
@@ -41,16 +45,13 @@
           </div>
         </footer>
       </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/Dereje-getu-tadesse-10">DEREJE GETU TADESSE</a>.
+      </div>
     </section>
   </main>
-
-
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
   <script src="./public/bundle.js"></script>
-
+  <!-- // fin ✌️ // -->
 </body>
 </html>

@@ -48,7 +48,6 @@ main{
 }
 
 // section charte
-
 #charte{
     margin: 20px auto;
     border-radius: 10px;
@@ -68,6 +67,7 @@ main{
 
 }
 
+// canvas
 canvas{
     margin-top: 30px;
     width: 100%;
@@ -80,12 +80,14 @@ hr{
     background-color: $cream;
 }
 
+// style footer
 footer{
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    // div D
     .totals{
         .regular{
             font-size: 14px;
@@ -96,7 +98,7 @@ footer{
           font-size: 30px;
       }
     }
-
+    // div G
     .calc{
         display: flex;
         flex-direction: column;
@@ -111,6 +113,7 @@ footer{
     }
 }
 
+// 270 --
 @media only screen and (max-width:270px){
     footer{
         display: flex;
@@ -118,16 +121,27 @@ footer{
         gap: 10px;
     }
 }
-
+// 280 ++
 @media only screen and (min-width:280px){
     footer{
         display: flex;
         flex-direction: row;
     }
 }
-
+// tablette & pc 500px ++
 @media only screen and (min-width:500px){
     #app{
         max-width: 500px;
     }
 }
+// attribution
+.attribution{
+    margin-top: 30px;
+    text-align: center;
+    color: $softRed;
+
+    a{
+        color: $cyan;
+    }
+}
+// fin ✌️

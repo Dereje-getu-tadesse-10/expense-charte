@@ -1,11 +1,10 @@
 import { Legend } from 'chart.js';
+// import scss file pour compilation avec webpack
 import '../styles/style.scss';
+// import de chart js
 const Chart = require('chart.js/auto').default;
 
-
-const ctx = document.querySelector('canvas').getContext('2d');
-const url = 'data.json';
-
+// les datas
 const arrDays = [
     'mon',
     'tue',
@@ -15,6 +14,7 @@ const arrDays = [
     'sat',
     'sun'
 ];
+
 const arrAmount = [
     '17.45',
     '34.91',
@@ -26,12 +26,14 @@ const arrAmount = [
 ];
 
 
-
+// data pour le graphe
 const data = {
     labels: arrDays,
     datasets: [{
       data: arrAmount,
+    //   style pour le graphique
       borderRadius:[5],
+      borderSkipped: false,
       backgroundColor: [
             'hsl(10, 79%, 65%)',
             'hsl(10, 79%, 65%)',
@@ -43,7 +45,7 @@ const data = {
       ]
     }]
   };
-
+ // petite config pour ne pas afficher les ligne de base
   const config = {
     type: 'bar',
     data: data,
@@ -64,6 +66,7 @@ const data = {
                 drawBorder: false,
             },
         }],
+        // remove des lignes de bases sur l'axe x & y
         scales:{
             x:{
                 grid:{
@@ -86,8 +89,9 @@ const data = {
         }
     }
   };
-
-   const amountChart = new Chart(
-    document.getElementById('myChart'),
+// affichage dans le canvas html
+const amountChart = new Chart(
+    document.getElementById('amountChart'),
     config
-  );
+);
+// fin ✌️ 
