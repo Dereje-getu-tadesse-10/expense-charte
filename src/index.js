@@ -22,36 +22,49 @@ const getValue = async () => {
 };
 getValue();
 
+
+
 new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: arrDays, 
+        labels: arrDays,
         datasets: [{
-            data: arrAmount, //Y-axis data
+            data: arrAmount,
             backgroundColor: 'hsl(10, 79%, 65%)',
-            borderColor: 'white',
-            // fill: false, //Fills the curve under the line with the babckground color. It's true by default
         }]
     },
 
-
-
     options: {
-        // del ligne en background
-        scales: {
-            x: {
-              grid: {
+
+            plugins: {
+              datalabels: {
                 display: false
               }
             },
-            y: {
+            yAxes: [{
+                gridLines: {
+                  drawBorder: false,
+                },
+              }],
+        scales: {
+            x: {
               grid: {
-                display: false
+                display: false,
+                drawBorder:false,
+                drawOnChartArea: false,
               }
-            }
+            },
+            y: {
+                beginAtZero: true,
+                ticks:{
+                    display:false
+                },
+              grid: {
+                display: false,
+                drawBorder:false,
+                drawOnChartArea: true,
+              },
           }
+        }
     }
-
-
-
-});
+})
