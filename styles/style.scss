@@ -1,4 +1,11 @@
-$midnight-blue : #2c3e50;
+@import './_colors/variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 
 body {
   background-color: $midnight-blue;
