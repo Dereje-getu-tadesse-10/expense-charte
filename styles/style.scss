@@ -102,11 +102,32 @@ footer{
         flex-direction: column;
         .bold{
             text-align: right;
-            font-weight: $fontWeight;
+            font-weight: $fontWeightM;
         }
         .last{
             font-size: 14px;
             color: $mediumBrown;
         }
+    }
+}
+
+@media only screen and (max-width:270px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width:280px){
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width:500px){
+    #app{
+        max-width: 500px;
     }
 }
