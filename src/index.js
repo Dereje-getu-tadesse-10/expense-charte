@@ -22,49 +22,57 @@ const getValue = async () => {
 };
 getValue();
 
-
-
-new Chart(ctx, {
-    type: 'bar',
-    data: {
-        labels: arrDays,
-        datasets: [{
-            data: arrAmount,
-            backgroundColor: 'hsl(10, 79%, 65%)',
-        }]
-    },
-
-    options: {
-
+function amountCharte() {
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: arrDays,
+            datasets: [{
+                data: arrAmount,
+                borderRadius:[5],
+                backgroundColor: [
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(186, 34%, 60%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)',
+                    'hsl(10, 79%, 65%)'
+                ]
+            }]
+        },
+        options: {
             plugins: {
-              datalabels: {
-                display: false
-              }
-            },
-            yAxes: [{
-                gridLines: {
-                  drawBorder: false,
+                  datalabels: {
+                    display: false
+                  }
                 },
-              }],
-        scales: {
-            x: {
-              grid: {
-                display: false,
-                drawBorder:false,
-                drawOnChartArea: false,
-              }
-            },
-            y: {
-                beginAtZero: true,
-                ticks:{
-                    display:false
+                yAxes: [{
+                    gridLines: {
+                      drawBorder: false,
+                    },
+                  }],
+            scales: {
+                x: {
+                  grid: {
+                    display: false,
+                    drawBorder:false,
+                    drawOnChartArea: false,
+                  }
                 },
-              grid: {
-                display: false,
-                drawBorder:false,
-                drawOnChartArea: true,
-              },
-          }
+                y: {
+                    beginAtZero: true,
+                    ticks:{
+                        display:false
+                    },
+                  grid: {
+                    display: false,
+                    drawBorder:false,
+                    drawOnChartArea: true,
+                  },
+              }
+            }
         }
-    }
-})
+    })
+}
+amountCharte();
