@@ -1,7 +1,7 @@
 import { Legend } from 'chart.js';
 import '../styles/style.scss';
 const Chart = require('chart.js/auto').default;
-const axios = require('axios')
+
 
 const ctx = document.querySelector('canvas').getContext('2d');
 const url = 'data.json';
