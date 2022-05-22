@@ -21,8 +21,29 @@ main{
     margin: auto;
 }
 .balance{
-    height:120px;
-    width: 100%;
+    padding: 20px;
+    // height:120px;
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-radius: 10px;
     background-color: $softRed;
+}
+
+.colBalance{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    color: white;
+    .regular{
+        font-family: $font;
+        font-size: 13px;
+        font-weight: $fontWeightL;
+    }
+    .bold{
+        font-family: $font;
+        font-weight: $fontWeightM;
+        font-size: 25px;
+    }
 }
