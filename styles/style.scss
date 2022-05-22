@@ -7,6 +7,22 @@
     list-style: none;
 }
 
-body {
-  background-color: $midnight-blue;
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: $cream;
+}
+
+
+#app{
+    width:90%;
+    height: 90%;
+    margin: auto;
+}
+.balance{
+    height:120px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $softRed;
 }
