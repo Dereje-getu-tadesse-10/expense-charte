@@ -79,3 +79,34 @@ hr{
     border: none;
     background-color: $cream;
 }
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .totals{
+        .regular{
+            font-size: 14px;
+            color: $mediumBrown;
+        }
+      .totalOfmonth{
+          font-weight: $fontWeightM;
+          font-size: 30px;
+      }
+    }
+
+    .calc{
+        display: flex;
+        flex-direction: column;
+        .bold{
+            text-align: right;
+            font-weight: $fontWeightM;
+        }
+        .last{
+            font-size: 14px;
+            color: $mediumBrown;
+        }
+    }
+}
