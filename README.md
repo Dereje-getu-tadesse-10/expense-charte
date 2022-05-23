@@ -1,4 +1,5 @@
 # expense-charte
+prise en main de librairie chart js + un test du compilateur sass avec webpack
 
 [lien du site](https://derejeg.promo-106.codeur.online/expense-charte/)
 
